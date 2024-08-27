@@ -332,8 +332,7 @@ body {
     /* Tablet size */
     @media only screen and (min-width:551px) and (max-width:900px) {
         body {
-            /* background-color: mediumspringgreen; */
-            background-color: coral;
+            background-color: mediumspringgreen;
         }
 
         #pink_appointment_bar {
