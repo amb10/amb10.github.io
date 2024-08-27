@@ -148,6 +148,9 @@ body {
 @supports not (-webkit-touch-callout: none) {
     /* Smartphone size */
     @media only screen and (max-width:550px) {
+        body {
+            background-color: pink;
+        }
         #pink_appointment_bar {
             margin-top: -2%;
             margin-right: -10px;
@@ -254,8 +257,7 @@ body {
     /* Smartphone size (min-width assumed around 320px) */
     @media only screen and (max-width:550px) {
         body {
-            /* background-color: mediumspringgreen; */
-            background-color: lightpink;
+            background-color: mediumspringgreen;
         }
 
         #pink_appointment_bar {
@@ -290,7 +292,7 @@ body {
 
         .lauren_at_salon {
             height: 40%;
-            width: 80%;
+            width: 100%;
             justify-self: center;
             float: none;
         }
