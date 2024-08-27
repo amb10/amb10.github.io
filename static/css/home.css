@@ -254,7 +254,8 @@ body {
     /* Smartphone size (min-width assumed around 320px) */
     @media only screen and (max-width:550px) {
         body {
-            background-color: mediumspringgreen;
+            /* background-color: mediumspringgreen; */
+            background-color: lightpink;
         }
 
         #pink_appointment_bar {
