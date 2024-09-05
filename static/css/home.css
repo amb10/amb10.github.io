@@ -148,6 +148,9 @@ body {
 @supports not (-webkit-touch-callout: none) {
     /* Smartphone size */
     @media only screen and (max-width:550px) {
+        body {
+            background-color: cyan;
+        }
         #pink_appointment_bar {
             margin-top: -2%;
             margin-right: -10px;
