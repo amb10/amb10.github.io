@@ -204,6 +204,9 @@ body {
 
     /* Tablet size */
     @media only screen and (min-width:551px) and (max-width:900px) {
+        body {
+            background-color: deepskyblue;
+        }
         #pink_appointment_bar {
             margin: -5%;
         }
