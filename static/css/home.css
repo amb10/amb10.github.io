@@ -1,6 +1,5 @@
 body {
-    /* background-color: aquamarine; */
-    background-color: firebrick;
+    background-color: aquamarine;
     font-family: 'Dosis';
     overflow-x: hidden;
 }
@@ -149,9 +148,6 @@ body {
 @supports not (-webkit-touch-callout: none) {
     /* Smartphone size */
     @media only screen and (max-width:550px) {
-        body {
-            background-color: cyan;
-        }
         #pink_appointment_bar {
             margin-top: -2%;
             margin-right: -10px;
@@ -205,9 +201,6 @@ body {
 
     /* Tablet size */
     @media only screen and (min-width:551px) and (max-width:900px) {
-        body {
-            background-color: deepskyblue;
-        }
         #pink_appointment_bar {
             margin: -5%;
         }
@@ -261,8 +254,7 @@ body {
     /* Smartphone size (min-width assumed around 320px) */
     @media only screen and (max-width:550px) {
         body {
-            /* background-color: mediumspringgreen; */
-            background-color: blueviolet;
+            background-color: mediumspringgreen;
         }
 
         #pink_appointment_bar {
@@ -340,8 +332,7 @@ body {
     /* Tablet size */
     @media only screen and (min-width:551px) and (max-width:900px) {
         body {
-            /* background-color: mediumspringgreen; */
-            background-color: fuchsia;
+            background-color: mediumspringgreen;
         }
 
         #pink_appointment_bar {
