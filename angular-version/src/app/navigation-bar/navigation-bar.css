@@ -1,0 +1,51 @@
+.bar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: lavenderblush;
+  background-color: hotpink;
+  padding: 1rem;
+}
+
+.icon_container {
+  display: inherit;
+  flex-direction: column;
+  padding-left: 3rem;
+  width: 50%;
+}
+
+.salon_icon {
+  transform: scale(1.5);
+}
+
+.nav_links_container {
+  padding-right: 3rem;
+  width: 50%;
+  float: right;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: right;
+  gap: 5%;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.nav_links a {
+  color: lavenderblush;
+  text-decoration: none;
+}
+
+.nav_links a:hover,
+.nav_links a.active:hover {
+  background-color: mediumspringgreen;
+  color: hotpink;
+}
+
+.nav_links a.active {
+  color: mediumspringgreen;
+}
+
+@media screen and (max-width: 400px) {
+}
