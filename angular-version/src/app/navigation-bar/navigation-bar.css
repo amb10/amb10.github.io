@@ -4,13 +4,22 @@
   justify-content: space-between;
   color: lavenderblush;
   background-color: hotpink;
+  box-shadow: pink 2px 2px 2px;
   padding: 1rem;
+  z-index: 1000;
+}
+
+a {
+  color: lavenderblush;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .icon_container {
   display: inherit;
-  flex-direction: column;
-  padding-left: 3rem;
+  flex-direction: row;
+  padding-left: 2%;
+  gap: 3%;
   width: 50%;
 }
 
@@ -18,8 +27,12 @@
   transform: scale(1.5);
 }
 
+.icon_container a {
+  text-decoration: underline;
+}
+
 .nav_links_container {
-  padding-right: 3rem;
+  padding-right: 2%;
   width: 50%;
   float: right;
 }
@@ -29,17 +42,13 @@
   justify-content: right;
   gap: 5%;
   list-style: none;
-  font-size: 1.5rem;
-}
-
-.nav_links a {
-  color: lavenderblush;
-  text-decoration: none;
 }
 
 .nav_links a:hover,
-.nav_links a.active:hover {
+.nav_links a.active:hover,
+.salon_link:hover {
   background-color: mediumspringgreen;
+  opacity: 0.4;
   color: hotpink;
 }
 
@@ -47,5 +56,68 @@
   color: mediumspringgreen;
 }
 
-@media screen and (max-width: 400px) {
+.menu_icon,
+.mobile_nav_links_container {
+  display: none;
+}
+
+.menu_icon {
+  background-color: pink;
+  color: lavenderblush;
+  box-shadow: lavenderblush 1px 1px;
+  border: none;
+  border-radius: 3px;
+  z-index: 1100;
+
+  &:active {
+    box-shadow: inset lavenderblush 1px 1px;
+  }
+}
+
+.mobile_nav_links_container {
+  background-color: mediumspringgreen;
+  color: hotpink;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.mobile_nav_links_container ul {
+  list-style: none;
+}
+
+.mobile_nav_links_container li {
+  margin-bottom: 10vh;
+}
+
+.mobile_nav_links_container a {
+  font-size: xx-large;
+  color: hotpink;
+}
+
+.mobile_nav_links_container.show {
+  transform: translateY(0);
+
+  &.menu_icon {
+    background-color: hotpink;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav_links_container,
+  .salon_link {
+    display: none;
+  }
+
+  .menu_icon {
+    display: flex;
+  }
 }
