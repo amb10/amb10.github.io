@@ -4,7 +4,7 @@ h1 {
   color: hotpink;
   font-weight: 700;
   font-style: normal;
-  font-size: 10vh;
+  font-size: 10vw;
   text-align: center;
 }
 
@@ -96,6 +96,10 @@ h1 {
 
 /* Responsive layout for 800px and up */
 @media (min-width: 800px) {
+  h1 {
+    font-size: 5vw;
+  }
+
   .main_container {
     flex-direction: row;
   }
