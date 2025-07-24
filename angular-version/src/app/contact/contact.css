@@ -39,6 +39,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .socials h2 {
@@ -112,5 +113,19 @@ h1 {
 
   .main_container {
     flex-direction: column;
+  }
+
+  .location_container,
+  .socials {
+    width: 90%;
+  }
+
+  .location_information {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .location_information .information_tile {
+    width: 90%;
   }
 }

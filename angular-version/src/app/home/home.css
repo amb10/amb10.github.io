@@ -94,6 +94,12 @@ h1 {
   color: hotpink;
 }
 
+@media (max-width: 500px) {
+  .column {
+    flex-direction: column;
+  }
+}
+
 /* Responsive layout for 800px and up */
 @media (min-width: 800px) {
   h1 {
