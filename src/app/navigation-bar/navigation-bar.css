@@ -75,6 +75,7 @@ a {
 }
 
 .mobile_nav_links_container {
+  z-index: 1000;
   background-color: mediumspringgreen;
   color: hotpink;
   position: fixed;

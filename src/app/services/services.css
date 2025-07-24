@@ -30,6 +30,7 @@ h3 {
   position: relative;
   padding-left: 5rem;
   padding-bottom: 5vh;
+  z-index: 2;
 }
 
 .timeline::before {
@@ -51,6 +52,7 @@ h3 {
   box-shadow: lightgray 3px 3px 2px;
   padding: 1rem;
   width: 90%;
+  z-index: 2;
 }
 
 /* Circles on the timeline */
