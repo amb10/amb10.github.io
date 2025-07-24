@@ -1,0 +1,124 @@
+/* Title  */
+h1 {
+  font-family: "Updock", cursive;
+  color: hotpink;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10vw;
+  text-align: center;
+}
+
+/* Main layout */
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Left and right columns */
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 300px;
+  gap: 5rem;
+  max-width: 1000px;
+}
+
+.column img {
+  width: 100%;
+  max-width: 60vh;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: pink 3px 3px 1px;
+}
+
+.column p {
+  text-align: center;
+  width: 100%;
+  color: hotpink;
+  line-height: normal;
+  font-size: 2.5vh;
+  margin-top: 1rem;
+}
+
+/* Grid container for cards */
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 2rem;
+}
+
+/* Individual cards */
+.portfolio_card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: mediumspringgreen 3px 3px 1px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio_card:hover {
+  transform: translateY(-10px) rotate(2deg);
+  box-shadow: hotpink 3px 3px 1px;
+}
+
+.portfolio_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 40vh;
+  flex: 1 1 auto;
+}
+
+/* Always-visible description */
+.portfolio_description {
+  text-align: center;
+  background-color: pink;
+  color: mediumspringgreen;
+  padding: 0.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.portfolio_card:hover .portfolio_description {
+  color: hotpink;
+}
+
+@media (max-width: 500px) {
+  .column {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout for 800px and up */
+@media (min-width: 800px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  .main_container {
+    flex-direction: row;
+  }
+
+  .card_container {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1400px) {
+  .column {
+    gap: 0;
+    max-width: 40%;
+    flex-direction: column;
+  }
+}
